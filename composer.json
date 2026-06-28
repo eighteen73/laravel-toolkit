@@ -1,0 +1,45 @@
+{
+    "name": "eighteen73/laravel-ai-assist",
+    "description": "eighteen73 Laravel AI Assist package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ed Jeavons",
+            "email": "ed@eighteen73.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0 || ^11.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.52",
+        "laravel/pint": "^1.29"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eighteen73\\AI\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Eighteen73\\AI\\AIAssistServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "@composer normalize"
+        ],
+        "format": "vendor/bin/pint",
+        "post-require": [
+            "@composer normalize"
+        ]
+    }
+}
