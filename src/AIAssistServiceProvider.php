@@ -22,7 +22,7 @@ class AIAssistServiceProvider extends ServiceProvider
     public function boot(): void
     {
         if (class_exists(Boost::class)) {
-            Boost::registerAgent('gemini', Gemini::class);
+            Boost::registerAgent('eighteen73-gemini', Gemini::class);
         }
     }
 }

@@ -11,7 +11,7 @@ class ServiceProviderTest extends TestCase
     public function test_it_registers_gemini_agent_with_boost(): void
     {
         $agents = Boost::getAgents();
-        $this->assertArrayHasKey('gemini', $agents);
-        $this->assertEquals(Gemini::class, $agents['gemini']);
+        $this->assertArrayHasKey('eighteen73-gemini', $agents);
+        $this->assertEquals(Gemini::class, $agents['eighteen73-gemini']);
     }
 }
