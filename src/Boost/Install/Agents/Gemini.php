@@ -14,12 +14,12 @@ class Gemini extends Agent implements SupportsGuidelines, SupportsMcp, SupportsS
 {
     public function name(): string
     {
-        return 'gemini';
+        return 'eighteen73-gemini';
     }
 
     public function displayName(): string
     {
-        return 'Gemini CLI';
+        return 'Gemini CLI (via eighteen73)';
     }
 
     public function transformGuidelines(string $markdown): string

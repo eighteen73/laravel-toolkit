@@ -12,8 +12,8 @@ class GeminiAgentTest extends TestCase
     {
         $agent = $this->app->make(Gemini::class);
 
-        $this->assertEquals('gemini', $agent->name());
-        $this->assertEquals('Gemini CLI', $agent->displayName());
+        $this->assertEquals('eighteen73-gemini', $agent->name());
+        $this->assertEquals('Gemini CLI (via eighteen73)', $agent->displayName());
     }
 
     public function test_transform_guidelines_escapes_mentions_only_in_foundational_context(): void
