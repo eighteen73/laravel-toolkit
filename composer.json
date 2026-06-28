@@ -10,15 +10,23 @@
     ],
     "require": {
         "php": "^8.2",
-        "illuminate/support": "^10.0 || ^11.0"
+        "illuminate/support": "^12.0 || ^13.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.52",
-        "laravel/pint": "^1.29"
+        "laravel/boost": "^2.0",
+        "laravel/pint": "^1.29",
+        "orchestra/testbench": "^10.0 || ^11.0",
+        "phpunit/phpunit": "^11.0 || ^12.0"
     },
     "autoload": {
         "psr-4": {
             "Eighteen73\\AI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eighteen73\\AI\\Tests\\": "tests/"
         }
     },
     "config": {
