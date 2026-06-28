@@ -1,0 +1,5 @@
+stages:
+  - publish
+
+include:
+  - component: $CI_SERVER_FQDN/ci/laravel/publish-package@main
