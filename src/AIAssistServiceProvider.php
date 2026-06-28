@@ -2,7 +2,9 @@
 
 namespace Eighteen73\AI;
 
+use Eighteen73\AI\Boost\Install\Agents\Gemini;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Boost\Boost;
 
 class AIAssistServiceProvider extends ServiceProvider
 {
@@ -19,6 +21,6 @@ class AIAssistServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Boost::registerAgent('gemini', Gemini::class);
     }
 }
