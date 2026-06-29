@@ -2,26 +2,24 @@
 
 A central package for incorporating AI functionality across eighteen73's Laravel projects.
 
-## Installation
+## Installation & Prep
 
-You can install the package via composer. Since this package is currently in development, you can register it locally in your project's `composer.json` using a path repository:
+You will need to add our custom repository to your project's `composer.json` first:
 
 ```json
 "repositories": [
     {
-        "type": "path",
-        "url": "../packages/laravel-ai-tools"
+        "type": "composer",
+        "url": "https://code.eighteen73.co.uk/pkg/laravel"
     }
 ]
 ```
 
-Then require the package:
+This package should be installed as a **dev** requirement:
 
 ```bash
-composer require eighteen73/laravel-ai-assist
+composer require eighteen73/laravel-ai-assist --dev
 ```
-
-The package will automatically register its service provider `Eighteen73\AI\AIAssistServiceProvider` using Laravel's package discovery.
 
 ## Usage
 

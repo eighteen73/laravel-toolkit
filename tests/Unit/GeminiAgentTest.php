@@ -50,12 +50,11 @@ class GeminiAgentTest extends TestCase
     {
         $agent = $this->app->make(Gemini::class);
 
-        $this->assertEquals('.gemini/settings.json', $agent->mcpConfigPath());
+        $this->assertEquals('.agents/mcp_config.json', $agent->mcpConfigPath());
         $this->assertEquals('AGENTS.md', $agent->guidelinesPath());
         $this->assertEquals('.agents/skills', $agent->skillsPath());
 
         $httpMcpConfig = $agent->httpMcpServerConfig('https://example.com/mcp');
-        $this->assertEquals('npx', $httpMcpConfig['command']);
-        $this->assertEquals(['-y', 'mcp-remote', 'https://example.com/mcp'], $httpMcpConfig['args']);
+        $this->assertEquals('https://example.com/mcp', $httpMcpConfig['serverUrl']);
     }
 }
