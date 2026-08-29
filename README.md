@@ -1,4 +1,4 @@
-# eighteen73 Laravel AI Assist
+# eighteen73 Laravel Toolkit
 
 A central package for incorporating AI functionality across eighteen73's Laravel projects.
 
@@ -9,7 +9,7 @@ This has is published in case anyone else finds it useful but we would not advis
 This package should only be installed as a **dev** requirement for the time being.
 
 ```bash
-composer require eighteen73/laravel-ai-assist --dev
+composer require eighteen73/laravel-toolkit --dev
 ```
 
 ## Usage

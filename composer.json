@@ -1,6 +1,6 @@
 {
-    "name": "eighteen73/laravel-ai-assist",
-    "description": "eighteen73 Laravel AI Assist package",
+    "name": "eighteen73/laravel-toolkit",
+    "description": "eighteen73 Laravel Toolkit",
     "license": "MIT",
     "authors": [
         {
@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Eighteen73\\AI\\": "src/"
+            "Eighteen73\\Ai\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Eighteen73\\AI\\Tests\\": "tests/"
+            "Eighteen73\\Ai\\Tests\\": "tests/"
         }
     },
     "config": {
@@ -37,7 +37,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Eighteen73\\AI\\AIAssistServiceProvider"
+                "Eighteen73\\Ai\\AiToolkitServiceProvider"
             ]
         }
     },
