@@ -10,6 +10,7 @@
     ],
     "require": {
         "php": "^8.2",
+        "composer/semver": "^3.0 || ^4.0",
         "illuminate/support": "^12.0 || ^13.0"
     },
     "require-dev": {
@@ -19,14 +20,17 @@
         "orchestra/testbench": "^10.0 || ^11.0",
         "phpunit/phpunit": "^11.0 || ^12.0"
     },
+    "suggest": {
+        "pestphp/pest": "Required for Pest architecture testing (^3.0)."
+    },
     "autoload": {
         "psr-4": {
-            "Eighteen73\\Ai\\": "src/"
+            "Eighteen73\\Toolkit\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Eighteen73\\Ai\\Tests\\": "tests/"
+            "Eighteen73\\Toolkit\\Tests\\": "tests/"
         }
     },
     "config": {
@@ -37,7 +41,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Eighteen73\\Ai\\AiToolkitServiceProvider"
+                "Eighteen73\\Toolkit\\ToolkitServiceProvider"
             ]
         }
     },
