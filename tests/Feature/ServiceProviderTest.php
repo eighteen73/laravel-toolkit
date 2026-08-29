@@ -1,9 +1,9 @@
 <?php
 
-namespace Eighteen73\AI\Tests\Feature;
+namespace Eighteen73\Ai\Tests\Feature;
 
-use Eighteen73\AI\Boost\Install\Agents\Gemini;
-use Eighteen73\AI\Tests\TestCase;
+use Eighteen73\Ai\Boost\Install\Agents\Gemini;
+use Eighteen73\Ai\Tests\TestCase;
 use Laravel\Boost\Boost;
 
 class ServiceProviderTest extends TestCase

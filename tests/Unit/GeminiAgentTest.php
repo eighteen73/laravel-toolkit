@@ -1,9 +1,9 @@
 <?php
 
-namespace Eighteen73\AI\Tests\Unit;
+namespace Eighteen73\Ai\Tests\Unit;
 
-use Eighteen73\AI\Boost\Install\Agents\Gemini;
-use Eighteen73\AI\Tests\TestCase;
+use Eighteen73\Ai\Boost\Install\Agents\Gemini;
+use Eighteen73\Ai\Tests\TestCase;
 use Laravel\Boost\Install\Enums\Platform;
 
 class GeminiAgentTest extends TestCase
