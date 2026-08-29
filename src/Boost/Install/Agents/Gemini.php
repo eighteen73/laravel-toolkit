@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Eighteen73\Ai\Boost\Install\Agents;
+namespace Eighteen73\Toolkit\Boost\Install\Agents;
 
 use Laravel\Boost\Contracts\SupportsGuidelines;
 use Laravel\Boost\Contracts\SupportsMcp;

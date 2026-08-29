@@ -1,8 +1,8 @@
 <?php
 
-namespace Eighteen73\Ai\Tests;
+namespace Eighteen73\Toolkit\Tests;
 
-use Eighteen73\Ai\AiToolkitServiceProvider;
+use Eighteen73\Toolkit\ToolkitServiceProvider;
 use Laravel\Boost\BoostServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
@@ -12,7 +12,7 @@ abstract class TestCase extends OrchestraTestCase
     {
         return [
             BoostServiceProvider::class,
-            AiToolkitServiceProvider::class,
+            ToolkitServiceProvider::class,
         ];
     }
 }

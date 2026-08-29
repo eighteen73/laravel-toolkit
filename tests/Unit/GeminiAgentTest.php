@@ -1,9 +1,9 @@
 <?php
 
-namespace Eighteen73\Ai\Tests\Unit;
+namespace Eighteen73\Toolkit\Tests\Unit;
 
-use Eighteen73\Ai\Boost\Install\Agents\Gemini;
-use Eighteen73\Ai\Tests\TestCase;
+use Eighteen73\Toolkit\Boost\Install\Agents\Gemini;
+use Eighteen73\Toolkit\Tests\TestCase;
 use Laravel\Boost\Install\Enums\Platform;
 
 class GeminiAgentTest extends TestCase
@@ -50,7 +50,7 @@ class GeminiAgentTest extends TestCase
     {
         $agent = $this->app->make(Gemini::class);
 
-        $this->assertEquals('.agents/mcp_config.json', $agent->mcpConfigPath());
+        $this->assertEquals('.gemini/settings.json', $agent->mcpConfigPath());
         $this->assertEquals('AGENTS.md', $agent->guidelinesPath());
         $this->assertEquals('.agents/skills', $agent->skillsPath());
 
